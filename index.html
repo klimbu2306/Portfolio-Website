@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- setting up basic meta data + styling-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar's Portfolio Website</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/media/Quantum-Favicon.png">
+
+    <!-- importing font... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- || NAVIGATION BAR || -->
+    <nav class="nav-overlay">
+    <!-- unordered list, containing hyperlinks to other webpages -->
+    <ul class="nav-bar"> 
+        <!-- NAVIGATION BUTTONS -->
+        <!-- pin the buttons to the right-hand side, using float: right CSS
+             <nav-span> styles the <a href></a> or <span></span> tags to look like nice buttons 
+             <nav-link> is an extra class, which makes an element highlighted on :hover -->     
+        <li>
+            <a href="#about-me" class="nav-span nav-link">About Me</a>
+        </li>
+        
+        <li>
+            <a href="#skills" class="nav-span nav-link">Skills</a>
+        </li>
+
+        <li>
+            <a href="#projects" class="nav-span nav-link">Projects</a>
+        </li>
+  
+        <li>
+            <a href="#contact-me" class="nav-span nav-link">Contact Me</a>
+        </li>
+
+    </ul>
+    </nav>
+
+    <div class="hero-container" id="about-me">
+        <video autoplay muted loop disablepictureinpicture>
+            <source src="../media/network-bg.mp4" type="video/mp4">
+        </video>
+
+        <h1 class="hero-text">
+            Hi I'm Kumar! 👋
+        </h1>
+
+        <p class="hero-text hero-desc">
+            I'm a 1st Year Computer Science student at the University of Leicester!
+            <br><br> I love programming, drawing, writing, reading and more.
+            <br><br> Check out this portfolio website I made using HTML & CSS!
+        </p>
+    </div>
+
+    <div class="main-container">
+        <div class="empty-class" style="height: 300px;"></div>
+        
+        <h1 class="main-text" id="skills">
+            Technical Skills 🛠️
+        </h1>
+        
+        <table class="skills-table">
+            <tr>
+                <th>Frontend</th>
+                <th>Backend</th>
+                <th>Frameworks</th>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Python</td>
+                <td>Flask</td>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>C#</td>
+                <td>Django</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>Luau</td>
+                <td>React</td>
+            </tr>
+        </table>
+
+        <div class="empty-class" style="height: 150px;"></div>
+
+        <h1 class="main-text" id="projects">
+            Projects 🧩
+        </h1>
+
+        <div class="container">
+            <!-- artist photo card -->
+            <article class="card">
+                <h2 style="color: white;">Music Festival Website</h2>
+
+                <video controls disablepictureinpicture style="height: 300px; width: 300px;">
+                    <source src="../media/music-festival.mp4" type="video/mp4">
+                </video>
+
+                <p style="color: white; font-size: medium;">
+                    Frontend website I had developed as a part of my 1st year coursework.
+                    My favourite parts of building this project was adding transitions to
+                    the page to make it more lively, and scripting the form validation
+                    mechanics.
+                </p>
+
+                <div class="empty-class" style="height: 50px;"></div>
+
+                <a href="https://github.com/klimbu2306/MusicFest-2025-Website" target="_blank">
+                    <img src="media/Github-Logo.png" style="width: 30px; height: 30px;"> </img>
+                </a>
+
+                <div class="empty-class" style="height: 100px;"></div>
+            </article>
+            <article class="card">
+                <h2 style="color: white;">Medieval Battlegrounds</h2>
+
+                <video controls disablepictureinpicture style="height: 300px; width: 300px;">
+                    <source src="../media/medieval-battlegrounds.mp4" type="video/mp4">
+                </video>
+
+                <p style="color: white; font-size: medium;">
+                    This was a 3D multiplayer videogame I made, which amassed over 13k+ different
+                    plays online! I spent a few months making this game - developing the code and 
+                    all of the assets used within the game!
+                </p>
+
+                <div class="empty-class" style="height: 50px;"></div>
+
+                <a href="https://github.com/klimbu2306/Medieval-Battlegrounds-Game" target="_blank">
+                    <img src="media/Github-Logo.png" style="width: 30px; height: 30px;"> </img>
+                </a>
+
+                <div class="empty-class" style="height: 100px;"></div>
+            </article>
+                        <article class="card">
+                <h2 style="color: white;">Football Physics Engine</h2>
+
+                <video controls disablepictureinpicture style="height: 300px; width: 300px;">
+                    <source src="../media/football-physics-engine.mp4" type="video/mp4">
+                </video>
+
+                <p style="color: white; font-size: medium;">
+                    A mini-project made to test a suite of unit testing libraries I 
+                    invented for Luau. It was fun to make this football engine, since I found it satisfying to
+                    implement the kinematic equations needed for the demo's projectile mechanics.
+
+                </p>
+
+                <div class="empty-class" style="height: 50px;"></div>
+
+                <a href="https://github.com/klimbu2306/Automated-Testing-Libraries" target="_blank">
+                    <img src="media/Github-Logo.png" style="width: 30px; height: 30px;"> </img>
+                </a>
+
+                <div class="empty-class" style="height: 100px;"></div>
+            </article>
+        </div>
+
+        <div class="empty-class" style="height: 350px;"></div>
+
+        <div class="contact-desc">
+            <h1 class="main-text" id="contact-me" style="transform: translateY(225%);">
+                Contact Me 📞
+            </h1>
+
+            <p class="hero-text hero-desc" style="transform: translateY(70%);">
+                Email Address 📧: klimbu3103@gmail.com <br><br>
+            </p>
+        </div>
+
+        <div class="contact-container">
+            <a href="https://www.linkedin.com/in/kumar-limbu-bb90ba340/" target="_blank">
+                <img src="media/LinkedIn-Logo.png"></img>
+            </a>
+            <a href="https://github.com/klimbu2306" target="_blank">
+                <img src="media/Github-Logo.png"> </img>
+            </a>
+        </div>
+
+        <div class="empty-class" style="height: 100px;"></div>
+    </div>
+</body>
+
+</html>
